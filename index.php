@@ -1,16 +1,20 @@
 <html>
-<head><title>Your Favorite</title></head>
+<head><title>Calculation Form</title></head>
 <body>
-    <form action="fav.php" method="post">
-    <b>Please enter your first name: </b><br/>
-    <input type="text" size="45" name="username"><br/>
-    <b>Please select your favorite wine:</b><br/>
-    <input type="radio" name="color" value="white">White</input><br/>
-    <input type="radio" name="color" value="rose">Rose</input><br/>
-    <input type="radio" name="color" value="red">Red</input><br/>
-    <b>Please enter your favorite dish: </b><br/>
-    <input type="text" size="45" name="dish"><br/><br/>
-    <input type="submit" value="Submit this form"><br/>
+    <form action="calc.php" method="post">
+    <b>Value 1: </b><br/>
+    <input type="text" size="10" name="val1"><br/>
+    <b>Value 2: </b><br/>
+    <input type="text" size="10" name="val2"><br/>
+    <b>Calculation:</b><br/>
+    <input type="radio" name="calc" value="add">Add</input>
+    <input type="radio" name="calc" value="sub">Subtract</input>
+    <input type="radio" name="calc" value="mul">Multiply</input>
+    <input type="radio" name="calc" value="div">Divide</input>
+    <br/>
+    <input type="submit" value="Calculate">
+    <input type="reset" value="Clear"><br/>
     </form>
 </body>
+
 </html>
